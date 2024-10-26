@@ -1,0 +1,213 @@
+/* src/styles.css */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: 'black';
+  }
+h1 {
+    font-weight: 500;
+    color: #ffff;
+}
+  
+header, main, footer {
+    padding: 1em;
+    text-align: center;
+}
+/* Base button styling */
+.Button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    outline:none;
+    transition: background-color 0.3s ease;
+}
+  
+  /* Active button styling */
+.Button.Active {
+    background-color: #0000; /* Green */
+    color: #242ccc;
+    border: 1px solid #242ccc;
+    
+}
+.Button.Active:hover {
+    background-color: #242ccc;
+    color:white;
+
+}
+  
+  /* Disabled button styling */
+.Button.Disabled {
+    background-color: #0000; /* Light gray */
+    color: #cacaca; /* Darker gray */
+    border: 1px solid #cacaca;
+
+}
+
+/* Container styling for profile creation */
+.profile-creation {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #0000;
+    text-align: center;
+}
+  
+  /* Title styling */
+.profile-creation h2 {
+    font-size: 30px;
+    color: #ffff;
+    margin-bottom: 20px;
+}
+  
+  /* Input field styling */
+.profile-creation input[type="text"] {
+    width: 90%;
+    font-family: 'DM Sans',sans-serif;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cacaca;
+    border-radius: 4px;
+    font-size: 1em;
+    color: #242ccc;
+    transition: border-color 0.3s ease;
+}
+  
+.profile-creation input[type="text"]:focus {
+    border-color: #242ccc;
+    outline: none;
+
+}
+  
+  /* Label styling */
+.profile-creation label {
+    font-size: 15px;
+    color: #ffff;
+}
+  
+  /* Button container styling */
+.profile-creation div {
+    margin: 15px 0;
+}
+  
+    
+  /* Freelancer and Client button styling */
+.profile-creation button {
+    background-color: #0000; /* Transparent */
+    color: #242ccc;
+    border: 1px solid #242ccc;
+    margin: 5px;
+    outline:none;
+}
+.profile-creation button:focus {
+    outline: none;
+}
+  
+.profile-creation button:hover {
+    background-color: #242ccc;
+    color: white;
+}
+
+.Button.Selected {
+    background-color: #242ccc;
+    color: white;
+    border: 1px solid #242ccc;
+    outline:none;
+}
+  
+.Button.GoNext {
+    background-color: #242ccc;
+    color: white;
+    margin-top: 20px;
+    outline: none;
+}
+.freelancer-details-form {
+    padding: 20px;
+    font-family: 'DM Sans', sans-serif;
+    max-width: 700px;
+}
+  
+.freelancer-details-form h2 {
+    color: #ffff;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+  
+.freelancer-details-form label {
+    font-size: 17px;
+    color: #ffff;
+    font-family: 'DM Sans',sans-serif
+}
+  
+.freelancer-details-form input[type="text"],
+.freelancer-details-form textarea {
+    width: 100%;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cacaca;
+    border-radius: 4px;
+    font-size: 15px;
+    outline:none;
+    color: #242ccc;
+}
+
+.link-input {
+    display: flex;
+    align-items: center;
+    font-family: 'DM Sans',sans-serif
+}
+  
+.link-input button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 1em;
+    color: #242ccc;
+    border: 1px solid #242ccc;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 4px;
+}
+  
+.link-input button:hover {
+    background-color: #242ccc;
+    color: white;
+}
+
+
+.edit-link {
+    cursor:pointer;
+    color: #242ccc;
+}
+
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #cacaca;
+    box-sizing: vertical;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'DM Sans',sans-serif;
+    outline:none;
+    color: #242ccc;
+  }
+  
+  /* Styling for short description input */
+  .short-description {
+    height: 40px;
+  }
+  
+  /* Styling for long description text area */
+  .long-description {
+    height: 100px;
+    resize: vertical;
+  }
+  
