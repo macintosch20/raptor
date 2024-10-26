@@ -30,14 +30,14 @@ function App() {
     <TonConnectUIProvider manifestUrl="https://macintosch20.github.io/raptor/tonconnect-mainfest.json">
       <Router>
         <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/profile-creation" element={<ProfileCreation freelancerData={freelancerData} setFreelancerData={setFreelancerData} />} />
-          <Route path="/add-details-client" element={<AddDetailsClient clientData={clientData} setClientData={setClientData} />} />
-          <Route path="/add-details-freelancer" element={<AddDetailsFreelancer freelancerData={freelancerData} setFreelancerData={setFreelancerData} />} />
-          <Route path="/freelancer-details-form" element={<FreelancerDetailsForm freelancerData={freelancerData} setFreelancerData={setFreelancerData} />} />
-          <Route path="/confirm-freelancer-details" element={<ConfirmFreelancerDetails freelancerData={freelancerData} />} />
-          <Route path="/add-details-client" element={<AddDetailsClient freelancerData={freelancerData} setFreelancerData={setFreelancerData} />} />
-          <Route path="/confirm-client-details" element={<ConfirmClientDetails clientData={clientData} />} />
+          <Route path="/raptor/" element={<LandingPage />} />
+          <Route path="/raptor/profile-creation" element={<ProfileCreation freelancerData={freelancerData} setFreelancerData={setFreelancerData} />} />
+          <Route path="/raptor/add-details-client" element={<AddDetailsClient clientData={clientData} setClientData={setClientData} />} />
+          <Route path="/raptor/add-details-freelancer" element={<AddDetailsFreelancer freelancerData={freelancerData} setFreelancerData={setFreelancerData} />} />
+          <Route path="/raptor/freelancer-details-form" element={<FreelancerDetailsForm freelancerData={freelancerData} setFreelancerData={setFreelancerData} />} />
+          <Route path="/raptor/confirm-freelancer-details" element={<ConfirmFreelancerDetails freelancerData={freelancerData} />} />
+          <Route path="/raptor/add-details-client" element={<AddDetailsClient freelancerData={freelancerData} setFreelancerData={setFreelancerData} />} />
+          <Route path="/raptor/confirm-client-details" element={<ConfirmClientDetails clientData={clientData} />} />
         </Routes>
       </Router>
     </TonConnectUIProvider>
