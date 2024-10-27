@@ -27,7 +27,7 @@ function App() {
   });
 
   return (
-    <TonConnectUIProvider manifestUrl="https://macintosch20.github.io/raptor/tonconnect-mainfest.json">
+    <TonConnectUIProvider manifestUrl="https://macintosch20.github.io/raptor/public/tonconnect-manifest.json">
       <Router>
         <Routes>
           <Route path="/" element={<LandingPage />} />
@@ -36,7 +36,6 @@ function App() {
           <Route path="/add-details-freelancer" element={<AddDetailsFreelancer freelancerData={freelancerData} setFreelancerData={setFreelancerData} />} />
           <Route path="/freelancer-details-form" element={<FreelancerDetailsForm freelancerData={freelancerData} setFreelancerData={setFreelancerData} />} />
           <Route path="/confirm-freelancer-details" element={<ConfirmFreelancerDetails freelancerData={freelancerData} />} />
-          <Route path="/add-details-client" element={<AddDetailsClient freelancerData={freelancerData} setFreelancerData={setFreelancerData} />} />
           <Route path="/confirm-client-details" element={<ConfirmClientDetails clientData={clientData} />} />
         </Routes>
       </Router>
